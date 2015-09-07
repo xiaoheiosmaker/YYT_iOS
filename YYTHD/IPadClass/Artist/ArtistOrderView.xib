@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Wft-Xi-QvP" customClass="ArtistOrderView">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArtistHeadImageView" id="8ux-j6-se2">
+                    <rect key="frame" x="36" y="6" width="98" height="98"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_headImage" id="yCv-PT-TCB">
+                    <rect key="frame" x="39" y="9" width="92" height="92"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JHP-5z-DPg">
+                    <rect key="frame" x="0.0" y="118" width="170" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C86-mr-siy">
+                    <rect key="frame" x="35" y="147" width="100" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="ArtistOrder">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="ArtistOrder_Sel"/>
+                    <connections>
+                        <action selector="orderBtnClicked:" destination="Wft-Xi-QvP" eventType="touchUpInside" id="hsc-5j-8B8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JYe-Dq-G5Z">
+                    <rect key="frame" x="35" y="147" width="100" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="ArtistOrder_Cancel">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="ArtistOrder_Cancel_Sel"/>
+                    <connections>
+                        <action selector="cancelBtnClicked:" destination="Wft-Xi-QvP" eventType="touchUpInside" id="UaJ-en-fwA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xqJ-bw-fF6">
+                    <rect key="frame" x="0.0" y="0.0" width="170" height="137"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backGroundBtnClicked:" destination="Wft-Xi-QvP" eventType="touchUpInside" id="Sg1-6x-vUZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="artistName" destination="JHP-5z-DPg" id="4tP-Ju-UQK"/>
+                <outlet property="backgroundBtn" destination="xqJ-bw-fF6" id="UHl-i2-k2P"/>
+                <outlet property="cancelBtn" destination="JYe-Dq-G5Z" id="8aJ-nh-4Az"/>
+                <outlet property="headBackGround" destination="8ux-j6-se2" id="Llg-wW-cNs"/>
+                <outlet property="headImageView" destination="yCv-PT-TCB" id="D3h-sx-QGu"/>
+                <outlet property="orderBtn" destination="C86-mr-siy" id="3T6-qp-SXn"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ArtistHeadImageView" width="107" height="107"/>
+        <image name="ArtistOrder" width="100" height="40"/>
+        <image name="ArtistOrder_Cancel" width="100" height="40"/>
+        <image name="ArtistOrder_Cancel_Sel" width="100" height="40"/>
+        <image name="ArtistOrder_Sel" width="100" height="40"/>
+        <image name="default_headImage" width="100" height="100"/>
+    </resources>
+</document>

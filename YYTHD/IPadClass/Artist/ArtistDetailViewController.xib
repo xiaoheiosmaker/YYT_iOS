@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistDetailViewController">
+            <connections>
+                <outlet property="backBtn" destination="4bF-FT-Y68" id="9mc-07-Yfp"/>
+                <outlet property="backgroundImageView" destination="ny4-vo-TBF" id="0SS-i8-RU3"/>
+                <outlet property="comSearch" destination="SyZ-kL-wSM" id="UZL-p1-WGN"/>
+                <outlet property="searchByHotBtn" destination="2iT-2e-IcR" id="Ibm-2s-nSW"/>
+                <outlet property="searchByNewBtn" destination="djh-8m-VEw" id="7SL-ou-35d"/>
+                <outlet property="titleImageView" destination="a6p-lH-Xfe" id="Hiq-4K-6xv"/>
+                <outlet property="videoTableView" destination="sJs-UI-bdT" id="5y9-Df-OKf"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sJs-UI-bdT">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Anu-TA-lkY"/>
+                        <outlet property="delegate" destination="-1" id="0qp-RR-I3o"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navi_bg" id="ny4-vo-TBF">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="62"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4bF-FT-Y68">
+                    <rect key="frame" x="0.0" y="6" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="navi_back">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="navi_back_h"/>
+                    <connections>
+                        <action selector="backBtnClicked:" destination="-1" eventType="touchUpInside" id="lA3-W2-eUQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="2iT-2e-IcR" userLabel="hotSortBtn">
+                    <rect key="frame" x="821" y="13" width="70" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="sortByHot">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="sortByHot_s"/>
+                    <state key="highlighted" image="sortByHot_s"/>
+                    <connections>
+                        <action selector="searchByHot:" destination="-1" eventType="touchUpInside" id="Mhe-uS-001"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="djh-8m-VEw" userLabel="newSortBtn">
+                    <rect key="frame" x="752" y="13" width="70" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="sortByNew">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="sortByNew_s"/>
+                    <state key="highlighted" image="sortByNew_s"/>
+                    <connections>
+                        <action selector="seachByNew:" destination="-1" eventType="touchUpInside" id="BCT-Mm-rap"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="SyZ-kL-wSM" userLabel="searchBtn">
+                    <rect key="frame" x="914" y="13" width="82" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="search_com">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Artist_Combination"/>
+                    <state key="highlighted" image="Artist_Combination_Sel"/>
+                    <connections>
+                        <action selector="comSearch:" destination="-1" eventType="touchUpInside" id="T34-Eq-3Th"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artist_Detail" id="a6p-lH-Xfe">
+                    <rect key="frame" x="470" y="20" width="85" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Artist_Combination" width="82" height="34"/>
+        <image name="Artist_Combination_Sel" width="82" height="34"/>
+        <image name="Artist_Detail" width="84" height="20"/>
+        <image name="navi_back" width="50" height="50"/>
+        <image name="navi_back_h" width="50" height="50"/>
+        <image name="navi_bg" width="1024" height="62"/>
+        <image name="search_com" width="82" height="34"/>
+        <image name="sortByHot" width="70" height="34"/>
+        <image name="sortByHot_s" width="70" height="34"/>
+        <image name="sortByNew" width="70" height="34"/>
+        <image name="sortByNew_s" width="70" height="34"/>
+    </resources>
+</document>

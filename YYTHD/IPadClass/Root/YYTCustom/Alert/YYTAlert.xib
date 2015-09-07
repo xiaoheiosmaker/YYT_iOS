@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zlL-mo-W9Q" customClass="YYTAlert">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.5499999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Fte-4Q-1LG">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="a5c-RA-lGh">
+                    <rect key="frame" x="235" y="110" width="512" height="384"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlertBackground" id="ZOY-mR-55O">
+                            <rect key="frame" x="47" y="76" width="418" height="232"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hlA-Sn-5ge">
+                            <rect key="frame" x="272" y="243" width="163" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="SendMail_Again_Sel">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="SendMail_Again"/>
+                            <connections>
+                                <action selector="MailBtnClicked:" destination="zlL-mo-W9Q" eventType="touchUpInside" id="WwP-C6-nJU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mnE-ud-brj">
+                            <rect key="frame" x="272" y="243" width="163" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="SendMail">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="SendMail_Sel"/>
+                            <connections>
+                                <action selector="MailBtnClicked:" destination="zlL-mo-W9Q" eventType="touchUpInside" id="2ev-7B-BdB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aHN-pA-JpM">
+                            <rect key="frame" x="68" y="104" width="376" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定邮箱是：" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Eg-MM-af1">
+                            <rect key="frame" x="68" y="195" width="117" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qr7-yu-jez">
+                            <rect key="frame" x="79" y="243" width="163" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="close">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="close_sel"/>
+                            <connections>
+                                <action selector="closeBtnClicked:" destination="zlL-mo-W9Q" eventType="touchUpInside" id="wqi-qr-dIm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gUU-G8-Jxg">
+                            <rect key="frame" x="79" y="243" width="163" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="MV_Detail_Cancel">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="MV_Detail_Cancel_Sel"/>
+                            <connections>
+                                <action selector="closeBtnClicked:" destination="zlL-mo-W9Q" eventType="touchUpInside" id="D5c-ce-jyV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ogt-f5-6aL">
+                            <rect key="frame" x="272" y="243" width="163" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="binding_sure">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="binding_sure_h"/>
+                            <connections>
+                                <action selector="sureBtnClicked:" destination="zlL-mo-W9Q" eventType="touchUpInside" id="aFP-pA-gu7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z09-bN-4CP">
+                            <rect key="frame" x="174" y="243" width="163" height="48"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="binding_sure">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" image="binding_sure_h"/>
+                            <connections>
+                                <action selector="alertSureBtnClicked:" destination="zlL-mo-W9Q" eventType="touchUpInside" id="O2i-Ok-8XU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p2f-aY-KkH" customClass="NIAttributedLabel">
+                            <rect key="frame" x="163" y="194" width="236" height="23"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <connections>
+                <outlet property="alertSureBtn" destination="z09-bN-4CP" id="UF1-df-3k1"/>
+                <outlet property="backgroundView" destination="Fte-4Q-1LG" id="4Eg-Up-Egc"/>
+                <outlet property="cancelBtn" destination="gUU-G8-Jxg" id="uAi-5i-3Re"/>
+                <outlet property="closeBtn" destination="qr7-yu-jez" id="pwz-dC-91A"/>
+                <outlet property="commentView" destination="a5c-RA-lGh" id="CMv-th-ygA"/>
+                <outlet property="contentLabel" destination="p2f-aY-KkH" id="NFG-Qz-dbr"/>
+                <outlet property="mailLabel" destination="8Eg-MM-af1" id="uaW-O2-dTW"/>
+                <outlet property="sendMailAgainBtn" destination="hlA-Sn-5ge" id="wBt-xN-FnH"/>
+                <outlet property="sendMailBtn" destination="mnE-ud-brj" id="wSM-LB-zh9"/>
+                <outlet property="strLabel" destination="aHN-pA-JpM" id="iD3-hm-Gc3"/>
+                <outlet property="sureBtn" destination="ogt-f5-6aL" id="SxB-8V-IAa"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="AlertBackground" width="419" height="234"/>
+        <image name="MV_Detail_Cancel" width="163" height="49"/>
+        <image name="MV_Detail_Cancel_Sel" width="163" height="49"/>
+        <image name="SendMail" width="163" height="49"/>
+        <image name="SendMail_Again" width="163" height="49"/>
+        <image name="SendMail_Again_Sel" width="163" height="49"/>
+        <image name="SendMail_Sel" width="163" height="49"/>
+        <image name="binding_sure" width="163" height="49"/>
+        <image name="binding_sure_h" width="163" height="49"/>
+        <image name="close" width="163" height="49"/>
+        <image name="close_sel" width="163" height="49"/>
+    </resources>
+</document>

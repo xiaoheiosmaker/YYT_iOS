@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="bottomView" destination="bR0-W1-QMr" id="Bid-eY-79d"/>
+                <outlet property="contentView" destination="erD-vu-97a" id="lyn-O2-MXB"/>
+                <outlet property="gameButton" destination="1Jk-QO-YC8" id="gWN-TG-M4c"/>
+                <outlet property="homeBtn" destination="d8n-Z3-aSt" id="alf-3I-xfU"/>
+                <outlet property="mlBtn" destination="AFI-JE-ZH7" id="Edi-h1-VdC"/>
+                <outlet property="mvBtn" destination="tsz-tO-Bvc" id="WW0-uw-brT"/>
+                <outlet property="newsButton" destination="wqO-hF-wIo" id="pBX-YW-Zu5"/>
+                <outlet property="settingButton" destination="iOI-it-fPa" id="FGx-fc-JTI"/>
+                <outlet property="vButton" destination="fZc-Ca-5Df" id="Oag-Pu-N52"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="erD-vu-97a">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </view>
+                <view contentMode="scaleToFill" id="bR0-W1-QMr">
+                    <rect key="frame" x="0.0" y="708" width="1024" height="60"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d8n-Z3-aSt">
+                            <rect key="frame" x="222" y="5" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="首页">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="首页1"/>
+                            <state key="highlighted" image="首页1"/>
+                            <connections>
+                                <action selector="homeBtnClicked:" destination="-1" eventType="touchUpInside" id="btl-6k-4Ym"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tsz-tO-Bvc">
+                            <rect key="frame" x="347" y="5" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="MV">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="MV1"/>
+                            <state key="highlighted" image="MV1"/>
+                            <connections>
+                                <action selector="mvBtnClicked:" destination="-1" eventType="touchUpInside" id="65G-Pe-SkL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fZc-Ca-5Df">
+                            <rect key="frame" x="469" y="5" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="V榜">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="V榜1"/>
+                            <state key="highlighted" image="V榜1"/>
+                            <connections>
+                                <action selector="VBtnClicked:" destination="-1" eventType="touchUpInside" id="kHy-C1-ZHi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AFI-JE-ZH7">
+                            <rect key="frame" x="590" y="5" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="悦单">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="悦单1"/>
+                            <state key="highlighted" image="悦单1"/>
+                            <connections>
+                                <action selector="MLBtnClicked:" destination="-1" eventType="touchUpInside" id="dil-bW-rL4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iOI-it-fPa">
+                            <rect key="frame" x="969" y="4" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="设置">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="设置1"/>
+                            <state key="highlighted" image="设置1"/>
+                            <connections>
+                                <action selector="clickedSettings:" destination="-1" eventType="touchUpInside" id="fq9-mK-Xml"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1Jk-QO-YC8">
+                            <rect key="frame" x="931" y="15" width="28" height="28"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="game">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="game_sel"/>
+                            <state key="highlighted" image="game_sel"/>
+                            <connections>
+                                <action selector="gameBtnClicked:" destination="-1" eventType="touchUpInside" id="MaK-4m-Zso"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wqO-hF-wIo">
+                            <rect key="frame" x="704" y="5" width="50" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="news_tab">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="news_tab_h"/>
+                            <state key="highlighted" image="news_tab_h"/>
+                            <connections>
+                                <action selector="newsBtnClicked:" destination="-1" eventType="touchUpInside" id="5ZH-yz-orB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MV" width="50" height="50"/>
+        <image name="MV1" width="50" height="50"/>
+        <image name="V榜" width="50" height="50"/>
+        <image name="V榜1" width="50" height="50"/>
+        <image name="game" width="28" height="28"/>
+        <image name="game_sel" width="28" height="28"/>
+        <image name="news_tab" width="50" height="50"/>
+        <image name="news_tab_h" width="50" height="50"/>
+        <image name="悦单" width="50" height="50"/>
+        <image name="悦单1" width="50" height="50"/>
+        <image name="设置" width="50" height="50"/>
+        <image name="设置1" width="50" height="50"/>
+        <image name="首页" width="50" height="50"/>
+        <image name="首页1" width="50" height="50"/>
+    </resources>
+</document>

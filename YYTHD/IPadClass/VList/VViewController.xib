@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VViewController">
+            <connections>
+                <outlet property="calendarBtn" destination="G0p-ol-MMQ" id="VKC-B9-h3s"/>
+                <outlet property="dateCodeLabel" destination="WE0-M2-VWf" id="OWw-Ci-9nR"/>
+                <outlet property="desBackgroundView" destination="eGz-wh-0ff" id="6zS-DE-ToA"/>
+                <outlet property="desLabel" destination="2Ta-bx-jYl" id="NAt-iy-S4u"/>
+                <outlet property="eaBtn" destination="MT5-bG-ksh" id="AY4-TP-aeH"/>
+                <outlet property="gtBtn" destination="ClO-kF-rcf" id="azi-hp-ZPs"/>
+                <outlet property="jsBtn" destination="Qta-68-sOJ" id="L63-VU-Oo2"/>
+                <outlet property="koreaBtn" destination="eq3-4M-kYh" id="AAk-RJ-mbG"/>
+                <outlet property="mlBtn" destination="6cT-M6-bPJ" id="erM-k3-cKY"/>
+                <outlet property="nextBtn" destination="zwG-QV-VC8" id="41W-QM-Dsh"/>
+                <outlet property="playView" destination="47t-dL-lxV" id="dZx-58-Ww5"/>
+                <outlet property="prveBtn" destination="Klv-4E-25l" id="eT9-Rb-N7i"/>
+                <outlet property="spBtn" destination="x33-ca-8Ez" id="ldx-IK-tLP"/>
+                <outlet property="tabImageView" destination="g6m-Lz-pjN" id="doK-9C-JRj"/>
+                <outlet property="thumbnailPicView" destination="4KL-95-CnI" id="1eH-vP-YQW"/>
+                <outlet property="videoDescriptionView" destination="8PE-ZO-Dl0" id="eUy-AJ-6OV"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4KL-95-CnI">
+                    <rect key="frame" x="322" y="128" width="477" height="295"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" id="47t-dL-lxV">
+                    <rect key="frame" x="14" y="132" width="731" height="410"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bg" id="g6m-Lz-pjN">
+                    <rect key="frame" x="0.0" y="79" width="1024" height="71"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oCS-If-q1W">
+                    <rect key="frame" x="14" y="511" width="169" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WE0-M2-VWf">
+                    <rect key="frame" x="20" y="543" width="228" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G0p-ol-MMQ">
+                    <rect key="frame" x="587" y="540" width="48" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="VList_DatePick">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="VList_DatePick_Sel"/>
+                    <state key="highlighted" image="VList_DatePick_Sel"/>
+                    <connections>
+                        <action selector="calendarClicked:" destination="-1" eventType="touchUpInside" id="Rsl-MJ-o5F"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Klv-4E-25l">
+                    <rect key="frame" x="498" y="540" width="38" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_Calendar_prve">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="VList_Calendar_prve_Sel"/>
+                    <connections>
+                        <action selector="prevDateBtnClicked:" destination="-1" eventType="touchUpInside" id="aOP-oS-cfb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zwG-QV-VC8">
+                    <rect key="frame" x="693" y="540" width="38" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_Calendar_next">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="VList_Calendar_next_Sel"/>
+                    <connections>
+                        <action selector="nextDateBtnClicked:" destination="-1" eventType="touchUpInside" id="JE3-nb-2Id"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6cT-M6-bPJ">
+                    <rect key="frame" x="236" y="97" width="92" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_MainLand">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="VList_MainLand_Sel"/>
+                    <state key="highlighted" image="VList_MainLand_Sel"/>
+                    <connections>
+                        <action selector="mlBtnClicked:" destination="-1" eventType="touchUpInside" id="bmR-rE-Spf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ClO-kF-rcf">
+                    <rect key="frame" x="328" y="97" width="92" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_GT">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="VList_GT_Sel"/>
+                    <state key="highlighted" image="VList_GT_Sel"/>
+                    <connections>
+                        <action selector="mlBtnClicked:" destination="-1" eventType="touchUpInside" id="iC8-aC-1O6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MT5-bG-ksh">
+                    <rect key="frame" x="420" y="97" width="92" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_EA">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="VList_EA_Sel"/>
+                    <state key="highlighted" image="VList_EA_Sel"/>
+                    <connections>
+                        <action selector="mlBtnClicked:" destination="-1" eventType="touchUpInside" id="skR-rp-3hN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eq3-4M-kYh">
+                    <rect key="frame" x="512" y="97" width="92" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_Korea">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="VList_Korea_Sel"/>
+                    <state key="highlighted" image="VList_Korea_Sel"/>
+                    <connections>
+                        <action selector="mlBtnClicked:" destination="-1" eventType="touchUpInside" id="TOL-RT-sga"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qta-68-sOJ">
+                    <rect key="frame" x="604" y="97" width="92" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_JS">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="VList_JS_Sel"/>
+                    <state key="highlighted" image="VList_JS_Sel"/>
+                    <connections>
+                        <action selector="mlBtnClicked:" destination="-1" eventType="touchUpInside" id="eax-P1-vm4"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VListDescBackground" id="eGz-wh-0ff">
+                    <rect key="frame" x="15" y="576" width="730" height="109"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   节目描述:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Ta-bx-jYl">
+                    <rect key="frame" x="12" y="578" width="719" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.69999999999999996" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" id="8PE-ZO-Dl0">
+                    <rect key="frame" x="16" y="605" width="729" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x33-ca-8Ez">
+                    <rect key="frame" x="696" y="97" width="92" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="VList_SP"/>
+                    <state key="selected" image="VList_SP_Sel"/>
+                    <state key="highlighted" image="VList_SP_Sel"/>
+                    <connections>
+                        <action selector="mlBtnClicked:" destination="-1" eventType="touchUpInside" id="cHB-dI-Nbx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="VListDescBackground" width="732" height="116"/>
+        <image name="VList_Calendar_next" width="40" height="40"/>
+        <image name="VList_Calendar_next_Sel" width="40" height="40"/>
+        <image name="VList_Calendar_prve" width="40" height="40"/>
+        <image name="VList_Calendar_prve_Sel" width="40" height="40"/>
+        <image name="VList_DatePick" width="40" height="40"/>
+        <image name="VList_DatePick_Sel" width="40" height="40"/>
+        <image name="VList_EA" width="92" height="36"/>
+        <image name="VList_EA_Sel" width="92" height="36"/>
+        <image name="VList_GT" width="92" height="36"/>
+        <image name="VList_GT_Sel" width="92" height="36"/>
+        <image name="VList_JS" width="184" height="71"/>
+        <image name="VList_JS_Sel" width="92" height="36"/>
+        <image name="VList_Korea" width="92" height="36"/>
+        <image name="VList_Korea_Sel" width="92" height="36"/>
+        <image name="VList_MainLand" width="92" height="36"/>
+        <image name="VList_MainLand_Sel" width="92" height="36"/>
+        <image name="VList_SP" width="92" height="36"/>
+        <image name="VList_SP_Sel" width="92" height="36"/>
+        <image name="nav_bg" width="1024" height="62"/>
+    </resources>
+</document>

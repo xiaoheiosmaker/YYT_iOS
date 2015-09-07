@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsListViewController">
+            <connections>
+                <outlet property="_selectedBtn" destination="DWB-d2-VM7" id="4hh-Ym-9jT"/>
+                <outlet property="collectionView" destination="UTA-C9-oda" id="HUJ-th-7ql"/>
+                <outlet property="view" destination="1" id="ulA-rh-Dsf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UTA-C9-oda">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="4" id="Gfo-m4-V6c">
+                        <size key="itemSize" width="506" height="126"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="4" minY="3" maxX="4" maxY="5"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Tal-gl-Fob"/>
+                        <outlet property="delegate" destination="-1" id="Eyh-gX-Zv2"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Piz-mP-1eZ">
+                    <rect key="frame" x="0.0" y="79" width="1024" height="72"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navi_bg" translatesAutoresizingMaskIntoConstraints="NO" id="fFP-6I-UAM">
+                            <rect key="frame" x="0.0" y="0.0" width="1024" height="72"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWB-d2-VM7">
+                            <rect key="frame" x="236" y="18" width="92" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="VList_MainLand">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="VList_MainLand_Sel"/>
+                            <state key="highlighted" image="VList_MainLand_Sel"/>
+                            <connections>
+                                <action selector="areaChangeEvent:" destination="-1" eventType="touchUpInside" id="R85-JQ-Nba"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="112" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu5-S7-eLa">
+                            <rect key="frame" x="328" y="18" width="92" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="VList_GT">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="VList_GT_Sel"/>
+                            <state key="highlighted" image="VList_GT_Sel"/>
+                            <connections>
+                                <action selector="areaChangeEvent:" destination="-1" eventType="touchUpInside" id="GTS-zt-I95"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="113" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWE-Pw-sz8">
+                            <rect key="frame" x="420" y="18" width="92" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="VList_EA">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="VList_EA_Sel"/>
+                            <state key="highlighted" image="VList_EA_Sel"/>
+                            <connections>
+                                <action selector="areaChangeEvent:" destination="-1" eventType="touchUpInside" id="Crx-PQ-lP2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="114" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rF-xm-aXF">
+                            <rect key="frame" x="512" y="18" width="92" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="VList_Korea">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="VList_Korea_Sel"/>
+                            <state key="highlighted" image="VList_Korea_Sel"/>
+                            <connections>
+                                <action selector="areaChangeEvent:" destination="-1" eventType="touchUpInside" id="VUr-fv-7sA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="115" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImW-MC-xFx">
+                            <rect key="frame" x="604" y="18" width="92" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="VList_JS">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="VList_JS_Sel"/>
+                            <state key="highlighted" image="VList_JS_Sel"/>
+                            <connections>
+                                <action selector="areaChangeEvent:" destination="-1" eventType="touchUpInside" id="HNM-Mr-lYL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="116" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dcj-IS-Qg4">
+                            <rect key="frame" x="695" y="18" width="92" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="EXNews">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" image="EXNews_h"/>
+                            <state key="highlighted" image="EXNews_h"/>
+                            <connections>
+                                <action selector="areaChangeEvent:" destination="-1" eventType="touchUpInside" id="dlR-hs-frZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="7kI-MN-ynN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Piz-mP-1eZ" firstAttribute="trailing" secondItem="UTA-C9-oda" secondAttribute="trailing" id="0PG-bz-VMQ"/>
+                <constraint firstAttribute="bottom" secondItem="UTA-C9-oda" secondAttribute="bottom" id="Cvs-y7-XcU"/>
+                <constraint firstAttribute="trailing" secondItem="UTA-C9-oda" secondAttribute="trailing" id="OyY-S4-6jo"/>
+                <constraint firstItem="UTA-C9-oda" firstAttribute="top" secondItem="1" secondAttribute="top" id="bfV-gd-PwD"/>
+                <constraint firstItem="Piz-mP-1eZ" firstAttribute="leading" secondItem="UTA-C9-oda" secondAttribute="leading" id="bn0-w3-N8A"/>
+                <constraint firstItem="UTA-C9-oda" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="gUr-sx-PzT"/>
+                <constraint firstAttribute="bottom" secondItem="Piz-mP-1eZ" secondAttribute="bottom" constant="617" id="mfk-yC-O3X"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EXNews" width="94" height="36"/>
+        <image name="EXNews_h" width="92" height="36"/>
+        <image name="VList_EA" width="92" height="36"/>
+        <image name="VList_EA_Sel" width="92" height="36"/>
+        <image name="VList_GT" width="92" height="36"/>
+        <image name="VList_GT_Sel" width="92" height="36"/>
+        <image name="VList_JS" width="184" height="71"/>
+        <image name="VList_JS_Sel" width="92" height="36"/>
+        <image name="VList_Korea" width="92" height="36"/>
+        <image name="VList_Korea_Sel" width="92" height="36"/>
+        <image name="VList_MainLand" width="92" height="36"/>
+        <image name="VList_MainLand_Sel" width="92" height="36"/>
+        <image name="navi_bg" width="1024" height="62"/>
+    </resources>
+</document>

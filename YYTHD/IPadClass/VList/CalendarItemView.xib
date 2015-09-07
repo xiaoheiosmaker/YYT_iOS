@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gqc-Kt-gph" customClass="CalendarItemView">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="X43-qa-6gY">
+                    <rect key="frame" x="29" y="22" width="113" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="BackGround_Green"/>
+                    <state key="highlighted" backgroundImage="Calendar_SelectDate"/>
+                    <connections>
+                        <action selector="firBtnClicked:" destination="gqc-Kt-gph" eventType="touchUpInside" id="LBY-73-1Ac"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GNo-yB-eEg">
+                    <rect key="frame" x="29" y="43" width="113" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="BackGround_Green"/>
+                    <state key="highlighted" backgroundImage="Calendar_SelectDate"/>
+                    <connections>
+                        <action selector="secondClick:" destination="gqc-Kt-gph" eventType="touchUpInside" id="BpX-pX-oxe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O9a-eY-jb0">
+                    <rect key="frame" x="29" y="64" width="113" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="BackGround_Green"/>
+                    <state key="highlighted" backgroundImage="Calendar_SelectDate"/>
+                    <connections>
+                        <action selector="thirdClicked:" destination="gqc-Kt-gph" eventType="touchUpInside" id="M2K-EW-Pms"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ypn-XI-wSt">
+                    <rect key="frame" x="29" y="85" width="113" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="BackGround_Green"/>
+                    <state key="highlighted" backgroundImage="Calendar_SelectDate"/>
+                    <connections>
+                        <action selector="fourthClickde:" destination="gqc-Kt-gph" eventType="touchUpInside" id="PFR-dQ-LpD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YAX-aQ-2sR">
+                    <rect key="frame" x="29" y="106" width="113" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="BackGround_Green"/>
+                    <state key="highlighted" backgroundImage="Calendar_SelectDate"/>
+                    <connections>
+                        <action selector="fifthclicked:" destination="gqc-Kt-gph" eventType="touchUpInside" id="J2w-NU-Xlj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mKF-Zf-DBd">
+                    <rect key="frame" x="51" y="3" width="72" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="fifthBtn" destination="YAX-aQ-2sR" id="Sr8-Il-FCz"/>
+                <outlet property="firstBtn" destination="X43-qa-6gY" id="mVv-6s-BtI"/>
+                <outlet property="fourthBtn" destination="Ypn-XI-wSt" id="alS-2P-b9u"/>
+                <outlet property="monthLabel" destination="mKF-Zf-DBd" id="Iga-wJ-cMC"/>
+                <outlet property="secondBtn" destination="GNo-yB-eEg" id="oh6-6A-asu"/>
+                <outlet property="thirdBtn" destination="O9a-eY-jb0" id="OsX-po-ekQ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackGround_Green" width="49" height="27"/>
+        <image name="Calendar_SelectDate" width="108" height="19"/>
+    </resources>
+</document>

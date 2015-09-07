@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3ss-wn-Nvb" customClass="TopView">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navi_bg" id="FpO-2y-hW6">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="62"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fhT-2A-aDi">
+                    <rect key="frame" x="0.0" y="-68" width="121" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="MyYYTPic">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="MyYYTPic2"/>
+                    <state key="highlighted" image="MyYYTPic2"/>
+                    <connections>
+                        <action selector="clickSideMenu:" destination="3ss-wn-Nvb" eventType="touchUpInside" id="UAj-6V-wIK"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="TMl-Hm-tMj">
+                    <rect key="frame" x="456" y="9" width="113" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="arQ-Yo-5Mp">
+                    <rect key="frame" x="762" y="6" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Time_History">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" image="Time_History_Sel"/>
+                    <connections>
+                        <action selector="clickRecent:" destination="3ss-wn-Nvb" eventType="touchUpInside" id="nJA-Zg-wDy"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrderUpdate" id="kwA-zX-4MR">
+                    <rect key="frame" x="33" y="3" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dqb-xO-LNp">
+                    <rect key="frame" x="39" y="7" width="13" height="13"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search_Back_White" id="AbF-7h-NHg">
+                    <rect key="frame" x="815" y="13" width="192" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search_Icon" id="CiX-3a-acQ">
+                    <rect key="frame" x="820" y="19" width="25" height="25"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="你要找什么？" minimumFontSize="17" id="21K-Xc-viU" customClass="YYTTextField">
+                    <rect key="frame" x="844" y="18" width="135" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.67442255429999998" green="0.67442255429999998" blue="0.67442255429999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <connections>
+                        <action selector="textDoneEditing:" destination="3ss-wn-Nvb" eventType="editingDidEndOnExit" id="3A1-79-Uwg"/>
+                        <outlet property="delegate" destination="-1" id="LZv-d4-Oot"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XUW-A3-3qw">
+                    <rect key="frame" x="973" y="17" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="search_close">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="textFieldClean:" destination="3ss-wn-Nvb" eventType="touchUpInside" id="iP3-kA-Vz3"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OBU-2h-nPm">
+                    <rect key="frame" x="129" y="12" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="notice_icon">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="notice_icon_sel"/>
+                    <state key="highlighted" image="notice_icon_sel"/>
+                    <connections>
+                        <action selector="clickNoticeBtn:" destination="3ss-wn-Nvb" eventType="touchUpInside" id="Z8c-3D-lCk"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_unread" id="kx8-pb-8F2">
+                    <rect key="frame" x="156" y="19" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <connections>
+                <outlet property="closeBtn" destination="XUW-A3-3qw" id="kbJ-3x-E72"/>
+                <outlet property="navImageView" destination="FpO-2y-hW6" id="1O6-LC-n5m"/>
+                <outlet property="noticeBtn" destination="OBU-2h-nPm" id="Gf5-7T-3Yt"/>
+                <outlet property="searchBackground" destination="AbF-7h-NHg" id="FPE-w2-Jhp"/>
+                <outlet property="searchIcon" destination="CiX-3a-acQ" id="34e-sS-chM"/>
+                <outlet property="searchTextField" destination="21K-Xc-viU" id="EGz-Wb-ibN"/>
+                <outlet property="sideButton" destination="fhT-2A-aDi" id="KnZ-1W-m5z"/>
+                <outlet property="timeButton" destination="arQ-Yo-5Mp" id="Ndf-mz-dTG"/>
+                <outlet property="titleImageView" destination="TMl-Hm-tMj" id="Dpi-Hq-zv6"/>
+                <outlet property="unReadCountLabel" destination="dqb-xO-LNp" id="q46-Yf-LpV"/>
+                <outlet property="unReadImageView" destination="kwA-zX-4MR" id="MA9-am-Fvh"/>
+                <outlet property="unreadNoticeImage" destination="kx8-pb-8F2" id="1fT-e4-4kJ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="MyYYTPic" width="100" height="100"/>
+        <image name="MyYYTPic2" width="100" height="100"/>
+        <image name="OrderUpdate" width="26" height="26"/>
+        <image name="Search_Back_White" width="192" height="37"/>
+        <image name="Search_Icon" width="25" height="25"/>
+        <image name="Time_History" width="50" height="50"/>
+        <image name="Time_History_Sel" width="50" height="50"/>
+        <image name="navi_bg" width="1024" height="62"/>
+        <image name="notice_icon" width="40" height="40"/>
+        <image name="notice_icon_sel" width="40" height="40"/>
+        <image name="notice_unread" width="10" height="10"/>
+        <image name="search_close" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NormalSwitchCell" id="F48-bb-0BE" customClass="NormalSwitchCell">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="F48-bb-0BE" id="3PO-FQ-3jW">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="分割边框" id="HtV-tC-KAt">
+                        <rect key="frame" x="4" y="-1" width="342" height="54"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KIE-Nq-dNq">
+                        <rect key="frame" x="18" y="16" width="200" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" id="Oo8-Ud-Pfj">
+                        <rect key="frame" x="286" y="13" width="25" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ljh-dN-z20">
+                        <rect key="frame" x="268" y="10" width="71" height="33"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="clear">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected" image="clear_sel_1"/>
+                        <state key="highlighted" image="clear_sel_1"/>
+                        <connections>
+                            <action selector="clearButtonClicked:" destination="F48-bb-0BE" eventType="touchUpInside" id="STu-By-xZT"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="anchorView" destination="Oo8-Ud-Pfj" id="VyD-Ub-qmF"/>
+                <outlet property="backImageView" destination="HtV-tC-KAt" id="8Q3-gi-ylo"/>
+                <outlet property="clearButton" destination="ljh-dN-z20" id="Blv-GY-rW8"/>
+                <outlet property="leftLabel" destination="KIE-Nq-dNq" id="by6-qI-kxa"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clear" width="71" height="33"/>
+        <image name="clear_sel_1" width="71" height="33"/>
+        <image name="分割边框" width="344" height="61"/>
+    </resources>
+</document>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoticeViewController">
+            <connections>
+                <outlet property="anncouceLine" destination="GJl-IL-geu" id="rBd-1b-MOs"/>
+                <outlet property="announceBackground" destination="K98-d0-ejq" id="etb-KG-Kki"/>
+                <outlet property="announceHeadView" destination="ODk-cw-PZs" id="1uM-EK-S6D"/>
+                <outlet property="announceLable" destination="CGt-uq-31f" id="AVd-gv-xff"/>
+                <outlet property="announcePopImage" destination="Och-y0-GHI" id="30B-50-ZJ3"/>
+                <outlet property="announceTableView" destination="kSo-Am-csa" id="q3n-an-DHB"/>
+                <outlet property="announceView" destination="7lU-tC-QwC" id="Pfl-jg-DZC"/>
+                <outlet property="discussBackground" destination="1f9-xz-w2I" id="xSw-A5-6yQ"/>
+                <outlet property="discussHeadView" destination="3vs-Zn-NaL" id="9bc-xV-wid"/>
+                <outlet property="discussLabel" destination="eJY-4W-aIA" id="GYV-7J-cXt"/>
+                <outlet property="discussLine" destination="SEU-Em-5Rp" id="hSw-uH-Ptf"/>
+                <outlet property="discussPopImage" destination="igP-c1-THf" id="cQr-ts-leU"/>
+                <outlet property="discussTableView" destination="4bs-3F-PUq" id="f05-EW-a4a"/>
+                <outlet property="discussView" destination="rhd-BC-HEb" id="f02-yr-5nW"/>
+                <outlet property="noAnnounce" destination="UG3-K3-mLI" id="pan-By-sRD"/>
+                <outlet property="noDiscuss" destination="krq-Zo-WzZ" id="yXe-4O-eef"/>
+                <outlet property="noSystem" destination="2jF-k8-V4a" id="uNx-ce-dgb"/>
+                <outlet property="nullAnnounce" destination="Y7b-7O-WYt" id="gmH-z0-br5"/>
+                <outlet property="nullDiscuss" destination="w2t-Fe-jhQ" id="yXK-7D-pAJ"/>
+                <outlet property="nullSystem" destination="PUd-oO-G6z" id="fmu-xW-9sq"/>
+                <outlet property="systemBackground" destination="qxu-Qh-O9J" id="FfO-11-aeJ"/>
+                <outlet property="systemLabel" destination="kPx-H0-Gn1" id="l6v-F9-mk0"/>
+                <outlet property="systemLine" destination="Q99-Dt-9r3" id="w1b-a4-Orm"/>
+                <outlet property="systemPopImage" destination="cLI-he-eL1" id="H31-eD-hmo"/>
+                <outlet property="systemTableView" destination="DVr-Gl-h0u" id="0i2-U5-bja"/>
+                <outlet property="systemView" destination="jhD-Jb-pdk" id="Lws-qp-fnX"/>
+                <outlet property="sysytemHeadView" destination="ytu-3X-lo9" id="RBY-ES-7gd"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="7lU-tC-QwC">
+                    <rect key="frame" x="5" y="90" width="240" height="605"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="K98-d0-ejq">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="605"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="ODk-cw-PZs">
+                            <rect key="frame" x="5" y="0.0" width="240" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_announce" id="jXN-NW-Uw5">
+                                    <rect key="frame" x="75" y="21" width="74" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_pop" id="Och-y0-GHI">
+                                    <rect key="frame" x="153" y="12" width="16" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CGt-uq-31f">
+                                    <rect key="frame" x="155" y="13" width="12" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="GJl-IL-geu">
+                                    <rect key="frame" x="-5" y="59" width="240" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kSo-Am-csa">
+                            <rect key="frame" x="1" y="60" width="238" height="542"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="XHP-ai-yT2"/>
+                                <outlet property="delegate" destination="-1" id="ADp-Oj-vc5"/>
+                            </connections>
+                        </tableView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前没有站内公告哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UG3-K3-mLI">
+                            <rect key="frame" x="20" y="349" width="200" height="92"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_null" id="Y7b-7O-WYt">
+                            <rect key="frame" x="63" y="230" width="114" height="130"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="jhD-Jb-pdk">
+                    <rect key="frame" x="249" y="90" width="240" height="605"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qxu-Qh-O9J">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="605"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="ytu-3X-lo9">
+                            <rect key="frame" x="5" y="0.0" width="240" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_system" id="o3E-Kn-0kM">
+                                    <rect key="frame" x="74" y="21" width="74" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_pop" id="cLI-he-eL1">
+                                    <rect key="frame" x="153" y="12" width="16" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kPx-H0-Gn1">
+                                    <rect key="frame" x="154" y="13" width="12" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_line_zhu" id="Q99-Dt-9r3">
+                                    <rect key="frame" x="-5" y="59" width="240" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DVr-Gl-h0u">
+                            <rect key="frame" x="1" y="60" width="238" height="542"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Vwm-at-ZzT"/>
+                                <outlet property="delegate" destination="-1" id="Gft-N6-MXu"/>
+                            </connections>
+                        </tableView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_null" id="PUd-oO-G6z">
+                            <rect key="frame" x="68" y="230" width="114" height="130"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前没有系统提醒哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2jF-k8-V4a">
+                            <rect key="frame" x="20" y="349" width="200" height="92"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="rhd-BC-HEb">
+                    <rect key="frame" x="493" y="90" width="526" height="605"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1f9-xz-w2I">
+                            <rect key="frame" x="0.0" y="0.0" width="526" height="605"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="3vs-Zn-NaL">
+                            <rect key="frame" x="5" y="0.0" width="526" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_discuss" id="f0F-8W-OiP">
+                                    <rect key="frame" x="226" y="21" width="74" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_pop" id="igP-c1-THf">
+                                    <rect key="frame" x="285" y="12" width="16" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eJY-4W-aIA">
+                                    <rect key="frame" x="287" y="13" width="12" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_line_zhu" id="SEU-Em-5Rp">
+                                    <rect key="frame" x="-5" y="59" width="526" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4bs-3F-PUq">
+                            <rect key="frame" x="1" y="60" width="524" height="542"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="U7S-Bb-ktw"/>
+                                <outlet property="delegate" destination="-1" id="9Gr-7u-ZPB"/>
+                            </connections>
+                        </tableView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notice_null" id="w2t-Fe-jhQ">
+                            <rect key="frame" x="206" y="230" width="114" height="130"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前没有回复您的评论哦！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="krq-Zo-WzZ">
+                            <rect key="frame" x="128" y="349" width="270" height="92"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.69803921568627447" green="0.69803921568627447" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="notice_announce" width="74" height="18"/>
+        <image name="notice_discuss" width="74" height="18"/>
+        <image name="notice_line_zhu" width="238" height="1"/>
+        <image name="notice_null" width="114" height="130"/>
+        <image name="notice_pop" width="15" height="16"/>
+        <image name="notice_system" width="74" height="18"/>
+    </resources>
+</document>
